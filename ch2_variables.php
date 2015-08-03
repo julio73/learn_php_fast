@@ -9,4 +9,8 @@ $user_data = array(
     'admin'     => 0,
     'user_id'   => '42',
   );
+
+$full_name = "{$user_data['name']['first']} {$user_data['name']['last']}";
+echo "Full name: ".$full_name
+
  ?>
