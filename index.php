@@ -11,5 +11,10 @@
 <?php 
   echo "Hello World";
 ?>
+<nav>
+  <ul>
+    <li><a href="ch2_variables.php" title="CH2 - Variables">CH2 - Variables</a></li>
+  </ul>
+</nav>
 </body>
 </html>
