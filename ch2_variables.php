@@ -4,7 +4,7 @@ $user_data = array(
     'username'  => 'test_user',
     'name'      => array(
       'first'   => 'John',
-      'last'    => 'Foe',
+      'last'    => 'Doe',
     ),
     'admin'     => 0,
     'user_id'   => '42',
