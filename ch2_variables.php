@@ -10,7 +10,8 @@ $user_data = array(
     'user_id'   => '42',
   );
 
+// Adding full name to user
 $full_name = "{$user_data['name']['first']} {$user_data['name']['last']}";
-echo "Full name: ".$full_name
+$user_data['name']['full_name'] = $full_name;
 
  ?>
