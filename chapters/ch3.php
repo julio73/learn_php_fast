@@ -55,3 +55,16 @@ echo 'What goes '.$around.' comes '.$around.'.';
  ?>
   </pre>
 </details>
+
+<!-- Exercice 3 -->
+<h2>Exercice 3</h2>
+<details open>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
+
+ ?>
+  </pre>
+</details>
