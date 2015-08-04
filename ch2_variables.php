@@ -28,5 +28,52 @@ var_dump($user_data);
 <h1>Exercice 2</h1>
 <?php 
 
+// Creating menu for restaurant with multidimensional array
+// Menu has 3 subcategories
+// Each subcategory includes 4 meals/foods
+// Each food must have a list of ingredients and a list of nutritional information
+$menu = array('breakfast', 'lunch', 'dinner');
+// Sample meals for breakfast
+$menu['breakfast'] = array();
+  $['breakfast'][0] = array(
+      'name'            => 'Coffee',
+      'ingredients'     => array('sugar', 'coffee'),
+      'nutrition_table' => array(
+          'carbs'   => 0,
+          'sugars'  => 10,
+          'protein' => 0,
+          'fat'     => 0,
+        ),
+    );
+  $['breakfast'][1] = array(
+      'name'            => 'Bacon & eggs',
+      'ingredients'     => array('pork', 'eggs'),
+      'nutrition_table' => array(
+          'carbs'   => 0,
+          'sugars'  => 5,
+          'protein' => 10,
+          'fat'     => 10,
+        ),
+    );
+  $['breakfast'][2] = array(
+      'name'            => 'Orange',
+      'ingredients'     => array('orange'),
+      'nutrition_table' => array(
+          'carbs'   => 0,
+          'sugars'  => 10,
+          'protein' => 0,
+          'fat'     => 0,
+        ),
+    );
+  $['breakfast'][3] = array(
+      'name'            => 'PBJ',
+      'ingredients'     => array('peanut butter', 'jelly', 'bread'),
+      'nutrition_table' => array(
+          'carbs'   => 5,
+          'sugars'  => 10,
+          'protein' => 5,
+          'fat'     => 2,
+        ),
+    );
 
  ?>
