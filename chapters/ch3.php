@@ -39,6 +39,18 @@ $num--;
 print "Decrement value by one. Value is now $num.\n";
 
  ?>
+  </pre>  
+</details>
+
+<!-- Exercice 2 -->
+<h2>Exercice 2</h2>
+<details open>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
+
+ ?>
   </pre>
-  
 </details>
