@@ -24,3 +24,9 @@ $user_data['email'] = "john.doe@example.com";
 var_dump($user_data);
 
  ?>
+ 
+<h1>Exercice 2</h1>
+<?php 
+
+
+ ?>
