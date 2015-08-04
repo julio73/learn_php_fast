@@ -1,3 +1,19 @@
+<a href=".." title="Home">Home</a>
+<h1>TOC</h1>
+<pre>
+Chapter Two – Variables
+  Introduction to Variables
+    Basics
+    Rules
+  Variable Types and Typecasting
+    Boolean
+    Number
+    String
+    Array
+    Objects
+    NULL
+  Conclusion
+</pre>
 <!-- Exercice 1 -->
 <h1>Exercice 1</h1>
 <details>
@@ -115,8 +131,7 @@ The nutritional information for this meal is:
   carbs: {$selected['nutrition_table']['carbs']} 
   protein: {$selected['nutrition_table']['protein']} 
   sugars: {$selected['nutrition_table']['sugars']} 
-  fat: {$selected['nutrition_table']['fat']} 
-";
+  fat: {$selected['nutrition_table']['fat']}";
 
 var_dump($message);
 

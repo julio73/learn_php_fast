@@ -13,7 +13,7 @@
 ?>
 <nav>
   <ul>
-    <li><a href="ch2_variables.php" title="CH2 - Variables">CH2 - Variables</a></li>
+    <li><a href="chapters/ch2.php" title="CH2 - Variables">CH2 - Variables</a></li>
   </ul>
 </nav>
 </body>
