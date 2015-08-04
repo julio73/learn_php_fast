@@ -1,6 +1,8 @@
 <!-- Exercice 1 -->
 <h1>Exercice 1</h1>
 <details open>
+  <summary>Solution</summary>
+  <pre>
 <?php 
 $user_data = array(
     'username'  => 'test_user',
@@ -17,17 +19,23 @@ $full_name = "{$user_data['name']['first']} {$user_data['name']['last']}";
 $user_data['name']['full_name'] = $full_name;
 
 // Casting admin to boolean then user id to integer
-$user_data['admin'] = (boolean)$user_data['admin'];
-$user_data['user_id'] = (integer)$user_data['user_id'];
+$user_data['admin'] = (bool) $user_data['admin'];
+$user_data['user_id'] = (int) $user_data['user_id'];
 
 // Adding email field
 $user_data['email'] = "john.doe@example.com";
 
 var_dump($user_data);
 
- ?>
- 
+?>
+  </pre>
+</details>
+
+<!-- Exercice 2 -->
 <h1>Exercice 2</h1>
+<details open>
+  <summary>Solution</summary>
+  <pre>
 <?php 
 
 // Creating menu for restaurant with multidimensional array
@@ -84,3 +92,5 @@ $menu['breakfast'] = array();
 
 var_dump($menu);
  ?>
+  </pre>
+</details>
