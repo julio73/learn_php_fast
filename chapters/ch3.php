@@ -44,12 +44,13 @@ print "Decrement value by one. Value is now $num.\n";
 
 <!-- Exercice 2 -->
 <h2>Exercice 2</h2>
-<details open>
+<details>
   <summary>Solution</summary>
   <pre>
 <?php 
 
-
+$around ="around";
+echo 'What goes '.$around.' comes '.$around.'.';
 
  ?>
   </pre>
