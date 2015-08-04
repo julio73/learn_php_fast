@@ -35,7 +35,7 @@ var_dump($user_data);
 $menu = array('breakfast', 'lunch', 'dinner');
 // Sample meals for breakfast
 $menu['breakfast'] = array();
-  $['breakfast'][0] = array(
+  $menu['breakfast'][0] = array(
       'name'            => 'Coffee',
       'ingredients'     => array('sugar', 'coffee'),
       'nutrition_table' => array(
@@ -45,7 +45,7 @@ $menu['breakfast'] = array();
           'fat'     => 0,
         ),
     );
-  $['breakfast'][1] = array(
+  $menu['breakfast'][1] = array(
       'name'            => 'Bacon & eggs',
       'ingredients'     => array('pork', 'eggs'),
       'nutrition_table' => array(
@@ -55,7 +55,7 @@ $menu['breakfast'] = array();
           'fat'     => 10,
         ),
     );
-  $['breakfast'][2] = array(
+  $menu['breakfast'][2] = array(
       'name'            => 'Orange',
       'ingredients'     => array('orange'),
       'nutrition_table' => array(
@@ -65,7 +65,7 @@ $menu['breakfast'] = array();
           'fat'     => 0,
         ),
     );
-  $['breakfast'][3] = array(
+  $menu['breakfast'][3] = array(
       'name'            => 'PBJ',
       'ingredients'     => array('peanut butter', 'jelly', 'bread'),
       'nutrition_table' => array(
@@ -76,4 +76,5 @@ $menu['breakfast'] = array();
         ),
     );
 
+var_dump($menu);
  ?>
