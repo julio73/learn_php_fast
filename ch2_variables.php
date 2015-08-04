@@ -14,4 +14,8 @@ $user_data = array(
 $full_name = "{$user_data['name']['first']} {$user_data['name']['last']}";
 $user_data['name']['full_name'] = $full_name;
 
+// Casting admin to boolean then user id to integer
+$user_data['admin'] = (boolean)$user_data['admin'];
+$user_data['user_id'] = (integer)$user_data['user_id'];
+
  ?>
