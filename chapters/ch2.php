@@ -1,7 +1,6 @@
 <a href=".." title="Home">Home</a>
-<h1>TOC</h1>
+<h2>Chapter Two – Variables</h2>
 <pre>
-Chapter Two – Variables
   Introduction to Variables
     Basics
     Rules
@@ -15,7 +14,7 @@ Chapter Two – Variables
   Conclusion
 </pre>
 <!-- Exercice 1 -->
-<h1>Exercice 1</h1>
+<h2>Exercice 1</h2>
 <details>
   <summary>Solution</summary>
   <pre>
@@ -48,7 +47,7 @@ var_dump($user_data);
 </details>
 
 <!-- Exercice 2 -->
-<h1>Exercice 2</h1>
+<h2>Exercice 2</h2>
 <details>
   <summary>Solution</summary>
   <pre>
@@ -112,7 +111,7 @@ var_dump($menu);
 </details>
 
 <!-- Exercice 3 -->
-<h1>Exercice 3</h1>
+<h2>Exercice 3</h2>
 <details>
   <summary>Solution</summary>
     <i>Incomplete: Printing array using singular item selection is tedious</i>
