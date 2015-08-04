@@ -18,4 +18,7 @@ $user_data['name']['full_name'] = $full_name;
 $user_data['admin'] = (boolean)$user_data['admin'];
 $user_data['user_id'] = (integer)$user_data['user_id'];
 
+// Adding email field
+$user_data['email'] = "john.doe@example.com";
+
  ?>
