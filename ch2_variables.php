@@ -1,6 +1,6 @@
 <!-- Exercice 1 -->
 <h1>Exercice 1</h1>
-<details open>
+<details>
   <summary>Solution</summary>
   <pre>
 <?php 
@@ -33,7 +33,7 @@ var_dump($user_data);
 
 <!-- Exercice 2 -->
 <h1>Exercice 2</h1>
-<details open>
+<details>
   <summary>Solution</summary>
   <pre>
 <?php 
@@ -99,10 +99,26 @@ var_dump($menu);
 <h1>Exercice 3</h1>
 <details>
   <summary>Solution</summary>
+    <i>Incomplete: Printing array using singular item selection is tedious</i>
   <pre>
 <?php 
 
+// User meal selection
+$breakfast = $menu['breakfast'];
+$selected = $breakfast[0];
 
+// Delivery message
+$message = "You picked: {$selected['name']}.
+This meal is made from:
+  {$selected['ingredients'][0]} & {$selected['ingredients'][1]}.
+The nutritional information for this meal is:
+  carbs: {$selected['nutrition_table']['carbs']} 
+  protein: {$selected['nutrition_table']['protein']} 
+  sugars: {$selected['nutrition_table']['sugars']} 
+  fat: {$selected['nutrition_table']['fat']} 
+";
+
+var_dump($message);
 
  ?>
   </pre>
