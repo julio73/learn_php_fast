@@ -1,4 +1,6 @@
+<!-- Exercice 1 -->
 <h1>Exercice 1</h1>
+<details open>
 <?php 
 $user_data = array(
     'username'  => 'test_user',
@@ -32,10 +34,14 @@ var_dump($user_data);
 // Menu has 3 subcategories
 // Each subcategory includes 4 meals/foods
 // Each food must have a list of ingredients and a list of nutritional information
-$menu = array('breakfast', 'lunch', 'dinner');
+$menu = array(
+  'breakfast' => array(), 
+  'lunch'     => array(),
+  'dinner'    => array(),
+);
 // Sample meals for breakfast
 $menu['breakfast'] = array();
-  $menu['breakfast'][0] = array(
+  $menu['breakfast'][] = array(
       'name'            => 'Coffee',
       'ingredients'     => array('sugar', 'coffee'),
       'nutrition_table' => array(
@@ -45,7 +51,7 @@ $menu['breakfast'] = array();
           'fat'     => 0,
         ),
     );
-  $menu['breakfast'][1] = array(
+  $menu['breakfast'][] = array(
       'name'            => 'Bacon & eggs',
       'ingredients'     => array('pork', 'eggs'),
       'nutrition_table' => array(
@@ -55,7 +61,7 @@ $menu['breakfast'] = array();
           'fat'     => 10,
         ),
     );
-  $menu['breakfast'][2] = array(
+  $menu['breakfast'][] = array(
       'name'            => 'Orange',
       'ingredients'     => array('orange'),
       'nutrition_table' => array(
@@ -65,7 +71,7 @@ $menu['breakfast'] = array();
           'fat'     => 0,
         ),
     );
-  $menu['breakfast'][3] = array(
+  $menu['breakfast'][] = array(
       'name'            => 'PBJ',
       'ingredients'     => array('peanut butter', 'jelly', 'bread'),
       'nutrition_table' => array(
