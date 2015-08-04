@@ -1,3 +1,4 @@
+<title>Chapter 3</title>
 <a href=".." title="Home">Home</a>
 <h2>Chapter Three – Logical, Math and other Expressions and Operations</h2>
 <pre>
@@ -60,10 +61,22 @@ echo 'What goes '.$around.' comes '.$around.'.';
 <h2>Exercice 3</h2>
 <details open>
   <summary>Solution</summary>
+  <i>Comment: Well, the <b>echo</b> commands still contains 
+  something else like <b>.\n</b> or HTML line breaks.<br>
+  And how am I supposed to guess the <b>gettype</b> function? ('O_o)</i>
   <pre>
 <?php 
 
-
+$whatsit = "get da mf typ";
+echo "Value is ".gettype($whatsit).".\n";
+$whatsit = 2.2;
+echo "Value is ".gettype($whatsit).".\n";
+$whatsit = false;
+echo "Value is ".gettype($whatsit).".\n";
+$whatsit = 1;
+echo "Value is ".gettype($whatsit).".\n";
+unset($whatsit); // with style!
+echo "Value is ".gettype($whatsit).".\n";
 
  ?>
   </pre>
