@@ -94,3 +94,17 @@ var_dump($menu);
  ?>
   </pre>
 </details>
+
+<!-- Exercice 3 -->
+<h1>Exercice 3</h1>
+<details>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
+
+ ?>
+  </pre>
+  
+</details>
