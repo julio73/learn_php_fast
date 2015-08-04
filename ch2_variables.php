@@ -21,4 +21,6 @@ $user_data['user_id'] = (integer)$user_data['user_id'];
 // Adding email field
 $user_data['email'] = "john.doe@example.com";
 
+var_dump($user_data);
+
  ?>
