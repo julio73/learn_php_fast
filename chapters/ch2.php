@@ -1,3 +1,4 @@
+<title>Chapter 2</title>
 <a href=".." title="Home">Home</a>
 <h2>Chapter Two – Variables</h2>
 <pre>
