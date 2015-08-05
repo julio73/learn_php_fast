@@ -41,6 +41,18 @@ if (date('F', time()) === 'August') {
   print "Not August, so at least not in the peak of the heat.";
 }
 
+ ?>
+  </pre>  
+</details>
+
+<!-- Exercice 2 -->
+<h2>Exercice 2</h2>
+<details>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
 
  ?>
   </pre>  
