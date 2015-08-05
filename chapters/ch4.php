@@ -95,3 +95,14 @@ print "</ol>"
  ?>
   </pre>  
 </details>
+
+<!-- Exercice 3 -->
+<h2>Exercice 3</h2>
+<details>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+?>
+  </pre>
+</details>
