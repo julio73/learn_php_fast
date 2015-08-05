@@ -30,6 +30,16 @@
   <pre>
 <?php 
 
+/* Print one of the following line based on the month
+It's August, so it's really hot.
+Not August, so at least not in the peak of the heat.
+*/
+
+if (date('F', time()) === 'August') {
+  print "It's August, so it's really hot.";
+} else {
+  print "Not August, so at least not in the peak of the heat.";
+}
 
 
  ?>
