@@ -22,6 +22,7 @@
   Include_once
   Conclusion
 </pre>
+
 <!-- Exercice 1 -->
 <h2>Exercice 1</h2>
 <details>
