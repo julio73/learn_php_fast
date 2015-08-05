@@ -49,11 +49,49 @@ if (date('F', time()) === 'August') {
 <h2>Exercice 2</h2>
 <details>
   <summary>Solution</summary>
+  <i>Comment: What kind of HTML must be included exactly? I hope I added enough.</i>
   <pre>
 <?php 
 
-
-
+/* Use while, do-while and two for loops to respectly print:
+abc abc abc abc abc abc abc abc abc
+xyz xyz xyz xyz xyz xyz xyz xyz xyz
+1 2 3 4 5 6 7 8 9
+1. Item A
+2. Item B
+3. Item C
+4. Item D
+5. Item E
+6. Item F
+*/
+// while
+$i = 0;
+print "<p>";
+while ($i < 9) {
+  print "<span>abc</span> ";
+  $i++;
+}
+print "</p>";
+// do-while
+$i = 0;
+print "<p>";
+do {
+  print "<span>zyz</span> ";
+  $i++;
+} while ($i < 9);
+print "</p>";
+// for
+print "<p>";
+for ($i = 1; $i < 10; $i++) {
+  print "<span>".$i."</span> ";
+}
+print "</p>";
+// for
+print "<ol>";
+for ($i = "A"; $i < "G"; $i++) {
+  print "<li>Item ".$i."</li>";
+}
+print "</ol>"
  ?>
   </pre>  
 </details>
