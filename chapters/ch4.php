@@ -102,6 +102,12 @@ print "</ol>"
   <summary>Solution</summary>
   <pre>
 <?php 
+// Printing square equations for numbers 1 to 12
+for ($i = 1; $i < 13; $i++) {
+  print $i." * ".$i." = ".($i**2)."\n";
+}
+// Thanks $i
+unset($i);
 
 ?>
   </pre>
