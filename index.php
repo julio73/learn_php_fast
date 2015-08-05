@@ -16,6 +16,7 @@
     <li><a href="chapters/ch2.php" title="CH2 - Variables">CH2 - Variables</a></li>
     <li><a href="chapters/ch3.php" title="CH3 - Logical, Math and other Expressions and Operations">CH3 - Logical, Math and other Expressions and Operations</a></li>
     <li><a href="chapters/ch4.php" title="CH4 - Control Structures">CH4 - Control Structures</a></li>
+    <li><a href="chapters/ch5.php" title="Soon...">Soon...</a></li>
   </ul>
 </nav>
 </body>
