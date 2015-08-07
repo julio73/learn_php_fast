@@ -96,10 +96,17 @@ print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee
 <h2>Exercice 2</h2>
 <details>
   <summary>Solution</summary>
+  <i>Side note: Lots of inconsistencies in this book and not enough review!</i>
   <pre>
 <?php 
 
+function areaRect($height, $width) {
+  $area = $height * $width;
+  $message = "A rectangle of length {$height} and {$width} has an area of {$area}.";
+  return $message;
+}
 
+echo areaRect(3,4);
 
 ?>
 </pre>
