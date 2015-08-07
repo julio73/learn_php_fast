@@ -69,40 +69,40 @@ $menu['breakfast'] = array();
       'name'            => 'Coffee',
       'ingredients'     => array('sugar', 'coffee'),
       'nutrition_table' => array(
-          'carbs'   => 0,
-          'sugars'  => 10,
-          'protein' => 0,
-          'fat'     => 0,
+          '0 carbs',
+          '10 sugars',
+          '0 proteins',
+          '0 fat'
         ),
     );
   $menu['breakfast'][] = array(
       'name'            => 'Bacon & eggs',
       'ingredients'     => array('pork', 'eggs'),
       'nutrition_table' => array(
-          'carbs'   => 0,
-          'sugars'  => 5,
-          'protein' => 10,
-          'fat'     => 10,
+          '0 carbs',
+          '5 sugars',
+          '10 proteins',
+          '10 fat'
         ),
     );
   $menu['breakfast'][] = array(
       'name'            => 'Orange',
       'ingredients'     => array('orange'),
       'nutrition_table' => array(
-          'carbs'   => 0,
-          'sugars'  => 10,
-          'protein' => 0,
-          'fat'     => 0,
+          '0 carbs',
+          '10 sugars',
+          '0 proteins',
+          '0 fat'
         ),
     );
   $menu['breakfast'][] = array(
       'name'            => 'PBJ',
       'ingredients'     => array('peanut butter', 'jelly', 'bread'),
       'nutrition_table' => array(
-          'carbs'   => 5,
-          'sugars'  => 10,
-          'protein' => 5,
-          'fat'     => 2,
+          '5 carbs',
+          '10 sugars',
+          '5 proteins',
+          '2 fat'
         ),
     );
 
@@ -116,6 +116,8 @@ var_dump($menu);
 <details>
   <summary>Solution</summary>
     <i>Incomplete: Printing array using singular item selection is tedious</i>
+    <br/>
+    <i>Revisited in <a href="ch5.php" title="CH5" target="_blank">CH5</a>.</i>
   <pre>
 <?php 
 
@@ -128,10 +130,10 @@ $message = "You picked: {$selected['name']}.
 This meal is made from:
   {$selected['ingredients'][0]} & {$selected['ingredients'][1]}.
 The nutritional information for this meal is:
-  carbs: {$selected['nutrition_table']['carbs']} 
-  protein: {$selected['nutrition_table']['protein']} 
-  sugars: {$selected['nutrition_table']['sugars']} 
-  fat: {$selected['nutrition_table']['fat']}";
+  {$selected['nutrition_table'][0]},
+  {$selected['nutrition_table'][1]},
+  {$selected['nutrition_table'][2]}, 
+  {$selected['nutrition_table'][3]}";
 
 var_dump($message);
 
