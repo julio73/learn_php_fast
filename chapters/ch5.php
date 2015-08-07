@@ -111,3 +111,16 @@ echo areaRect(3,4);
 ?>
 </pre>
 </details>
+
+<!-- Exercice 3 -->
+<h2>Exercice 3</h2>
+<details>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
+
+?>
+</pre>
+</details>
