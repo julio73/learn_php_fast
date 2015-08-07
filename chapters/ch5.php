@@ -90,6 +90,17 @@ print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee
 
  ?>
   </pre>
-  
 </details>
 
+<!-- Exercice 2 -->
+<h2>Exercice 2</h2>
+<details>
+  <summary>Solution</summary>
+  <pre>
+<?php 
+
+
+
+?>
+</pre>
+</details>
