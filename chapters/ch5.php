@@ -1,5 +1,8 @@
-<title>Chapter 5</title>
-<a href=".." title="Home">Home</a>
+<?php
+$title = "Chapter 5";
+include_once 'shared/test_input.php';
+include_once 'shared/banner.php';
+?>
 <h2>Chapter Five – Functions</h2>
 <pre>
   Introduction
@@ -107,31 +110,36 @@ function areaRect($height, $width) {
   $message = "A rectangle of height {$height} and width {$width} has an area of {$area}.";
   return $message;
 }
+// Some result variables
+$result_area;
+$input_height = $input_width = 0;
+// Modify height and width with new input
+if (($_SERVER["REQUEST_METHOD"] === "POST") && 
+    !is_null($_POST["height"]) && !is_null($_POST["width"])) {
+  $input_height = (int) test_input($_POST["height"]);
+  $input_width = (int) test_input($_POST["width"]);
+  $result_area = areaRect($input_height, $input_width);
+}
 
 ?>
 </pre>
-<form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8" 
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" accept-charset="utf-8" 
   style="padding: 5px; background-color: #efefef;">
   <p>
     <label>Height:<br>
-      <input type="number" name="height" required>
+      <input type="number" name="height" min="0" required
+       value="<?php echo $input_height; ?>">
     </label>
   </p>
   <p>
     <label>Width:<br>
-      <input type="number" name="width" required>
+      <input type="number" name="width" min="0" required
+       value="<?php echo $input_width; ?>">
     </label>
   </p>
   <button type="submit">Calculate Area</button>
   <p>
-  <b>Result: </b>
-    <?php 
-      if (!is_null($_POST["height"]) && !is_null($_POST["width"])) {
-        $h = $_POST["height"];
-        $w = (int) $_POST["width"];
-        echo areaRect($h, $w);
-      }
-    ?>
+    <b>Result: </b><?php echo $result_area; ?>
   </p>
 </form> 
 </details>
@@ -161,22 +169,30 @@ $months = [
   "november" => 30,
   "december" => 31,
 ];
-// Option maker for months select tag
-function optionMaker($key, $value) {
-  global $called;
-  return "<option value=\"{$value}\">".ucwords($key)."</option>";
+// Option maker for months select tag, which remembers last selected month
+function optionMaker($key, $value, $last_selected) {
+  $selected = ($last_selected === $value) ? " selected" : "";
+  return "<option value='{$value}'".$selected.">".ucwords($key)."</option>";
+}
+// Output and selection variables
+$result_month_info;
+$input_month;
+if (($_SERVER["REQUEST_METHOD"] === "POST") && !is_null($_POST["month"])) {
+  $input_month = test_input($_POST["month"]);
+  $result_month_info = "The month of ".ucfirst($input_month)
+    ." has ".$months[$input_month]." days.";
 }
 
 ?>
 </pre>
-<form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8"
-  style="padding: 5px; background-color: #efefef;">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"
+  accept-charset="utf-8" style="padding: 5px; background-color: #efefef;">
   <p>
     <label for="month">Please choose a month.</label>
     <select id="month" name="month">
       <?php 
         foreach ($months as $key => $value) {
-          print optionMaker($key, $key);
+          print optionMaker($key, $key, $input_month);
         }
         unset($key, $value);
       ?>
@@ -184,13 +200,7 @@ function optionMaker($key, $value) {
   </p>
   <button type="submit">Submit</button>
   <p>
-    <b>Result: </b>
-    <?php 
-      if (!is_null($_POST["month"])) {
-        $month = $_POST["month"];
-        echo "The month of ".ucfirst($month)." has ".$months[$month]." days.";
-      }
-    ?>
+    <b>Result: </b><?php echo $result_month_info; ?>
   </p>
 </form>
 </details>
