@@ -1,7 +1,9 @@
-<?php 
-$title = "Chapter 3";
-include_once 'shared/banner.php';
+<?php
+  $title = "Chapter 3";
+  include_once 'shared/chapter_head.php';
 ?>
+<body>
+<?php include_once 'shared/header.php'; ?>
 <h2>Chapter Three – Logical, Math and other Expressions and Operations</h2>
 <pre>
   Introduction to Expressions and Operators
@@ -12,7 +14,7 @@ include_once 'shared/banner.php';
 <!-- Exercice 1 -->
 <h2>Exercice 1</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 
@@ -48,7 +50,7 @@ print "Decrement value by one. Value is now $num.\n";
 <!-- Exercice 2 -->
 <h2>Exercice 2</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 
@@ -62,7 +64,7 @@ echo 'What goes '.$around.' comes '.$around.'.';
 <!-- Exercice 3 -->
 <h2>Exercice 3</h2>
 <details open>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: Well, the <b>echo</b> commands still contains 
   something else like <b>.\n</b> or HTML line breaks.<br>
   And how am I supposed to guess the <b>gettype</b> function? ('O_o)</i>
@@ -83,3 +85,5 @@ echo "Value is ".gettype($whatsit).".\n";
  ?>
   </pre>
 </details>
+<?php include 'shared/footer.php'; ?>
+</body>

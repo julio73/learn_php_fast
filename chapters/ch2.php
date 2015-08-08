@@ -1,7 +1,9 @@
-<?php 
-$title = "Chapter 2";
-include_once 'shared/banner.php';
+<?php
+  $title = "Chapter 2";
+  include_once 'shared/chapter_head.php';
 ?>
+<body>
+<?php include_once 'shared/header.php'; ?>
 <h2>Chapter Two – Variables</h2>
 <pre>
   Introduction to Variables
@@ -17,9 +19,9 @@ include_once 'shared/banner.php';
   Conclusion
 </pre>
 <!-- Exercice 1 -->
-<h2>Exercice 1</h2>
+<h2 id="exo1">Exercice 1</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 $user_data = array(
@@ -50,9 +52,9 @@ var_dump($user_data);
 </details>
 
 <!-- Exercice 2 -->
-<h2>Exercice 2</h2>
+<h2 id="exo2">Exercice 2</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 
@@ -114,9 +116,9 @@ var_dump($menu);
 </details>
 
 <!-- Exercice 3 -->
-<h2>Exercice 3</h2>
+<h2 id="exo3">Exercice 3</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
     <i>Incomplete: Printing array using singular item selection is tedious</i>
     <br/>
     <i>Revisited in <a href="ch5.php" title="CH5" target="_blank">CH5</a>.</i>
@@ -143,3 +145,5 @@ var_dump($message);
   </pre>
   
 </details>
+<?php include 'shared/footer.php'; ?>
+</body>

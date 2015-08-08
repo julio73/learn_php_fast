@@ -1,8 +1,11 @@
 <?php
-$title = "Chapter 5";
-include_once 'shared/test_input.php';
-include_once 'shared/banner.php';
+  $title = "Chapter 5";
+  include_once 'shared/chapter_head.php';
+  // For Exo 2 & 3
+  include_once 'shared/test_input.php';
 ?>
+<body>
+<?php include_once 'shared/header.php'; ?>
 <h2>Chapter Five – Functions</h2>
 <pre>
   Introduction
@@ -17,9 +20,9 @@ include_once 'shared/banner.php';
 </pre>
 
 <!-- Exercice 1 -->
-<h2>Exercice 1</h2>
+<h2 id="exo1">Exercice 1</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: The following revisit to CH2.Exos was much needed.<br>
   Now I have to learn how to use include and share across files</i>
   <pre>
@@ -96,9 +99,9 @@ print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee
 </details>
 
 <!-- Exercice 2 -->
-<h2>Exercice 2</h2>
-<details>
-  <summary>Solution</summary>
+<h2 id="exo2">Exercice 2</h2>
+<details <?php echo (is_null($_POST["height"]) ? "" : "open");?>>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Side note: Lots of inconsistencies in this book and not enough review!<br>
   I take it back, it covers interesting content in a very bad way.</i>
   <pre>
@@ -145,9 +148,9 @@ if (($_SERVER["REQUEST_METHOD"] === "POST") &&
 </details>
 
 <!-- Exercice 3 -->
-<h2>Exercice 3</h2>
-<details>
-  <summary>Solution</summary>
+<h2 id="exo3">Exercice 3</h2>
+<details <?php echo (is_null($_POST["month"]) ? "" : "open");?>>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: There has to be an easier way to do this month thing.<br>
   Terrible learning curve from content. What does it mean by "once again"?<br>
   When was I supposed to have used php forms so far?</i>
@@ -204,3 +207,5 @@ if (($_SERVER["REQUEST_METHOD"] === "POST") && !is_null($_POST["month"])) {
   </p>
 </form>
 </details>
+<?php include 'shared/footer.php'; ?>
+</body>

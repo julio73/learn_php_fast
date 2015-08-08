@@ -1,7 +1,9 @@
 <?php 
-$title = "Chapter 4";
-include_once 'shared/banner.php';
+  $title = "Chapter 4";
+  include_once 'shared/chapter_head.php';
 ?>
+<body>
+<?php include_once 'shared/header.php'; ?>
 <h2>Chapter Four – Control Structures</h2>
 <pre>
   Introduction
@@ -28,7 +30,7 @@ include_once 'shared/banner.php';
 <!-- Exercice 1 -->
 <h2>Exercice 1</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 
@@ -50,7 +52,7 @@ if (date('F', time()) === 'August') {
 <!-- Exercice 2 -->
 <h2>Exercice 2</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: What kind of HTML must be included exactly? I hope I added enough.</i>
   <pre>
 <?php 
@@ -101,7 +103,7 @@ print "</ol>"
 <!-- Exercice 3 -->
 <h2>Exercice 3</h2>
 <details>
-  <summary>Solution</summary>
+  <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 // Printing square equations for numbers 1 to 12
@@ -114,3 +116,5 @@ unset($i);
 ?>
   </pre>
 </details>
+<?php include 'shared/footer.php'; ?>
+</body>
