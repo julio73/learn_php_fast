@@ -12,7 +12,7 @@
   Conclusion
 </pre>
 <!-- Exercice 1 -->
-<h2>Exercice 1</h2>
+<h2 id="exo1">Exercice 1</h2>
 <details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
@@ -48,7 +48,7 @@ print "Decrement value by one. Value is now $num.\n";
 </details>
 
 <!-- Exercice 2 -->
-<h2>Exercice 2</h2>
+<h2 id="exo2">Exercice 2</h2>
 <details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
@@ -62,7 +62,7 @@ echo 'What goes '.$around.' comes '.$around.'.';
 </details>
 
 <!-- Exercice 3 -->
-<h2>Exercice 3</h2>
+<h2 id="exo3">Exercice 3</h2>
 <details open>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: Well, the <b>echo</b> commands still contains 

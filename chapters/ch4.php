@@ -28,7 +28,7 @@
 </pre>
 
 <!-- Exercice 1 -->
-<h2>Exercice 1</h2>
+<h2 id="exo1">Exercice 1</h2>
 <details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
@@ -50,7 +50,7 @@ if (date('F', time()) === 'August') {
 </details>
 
 <!-- Exercice 2 -->
-<h2>Exercice 2</h2>
+<h2 id="exo2">Exercice 2</h2>
 <details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: What kind of HTML must be included exactly? I hope I added enough.</i>
@@ -101,7 +101,7 @@ print "</ol>"
 </details>
 
 <!-- Exercice 3 -->
-<h2>Exercice 3</h2>
+<h2 id="exo3">Exercice 3</h2>
 <details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
