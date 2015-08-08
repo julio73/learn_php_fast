@@ -96,20 +96,44 @@ print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee
 <h2>Exercice 2</h2>
 <details>
   <summary>Solution</summary>
-  <i>Side note: Lots of inconsistencies in this book and not enough review!</i>
+  <i>Side note: Lots of inconsistencies in this book and not enough review!<br>
+  I take it back, it covers interesting content in a very bad way.</i>
   <pre>
 <?php 
 
+// Ouputs the area of rectangle with the given height and width
 function areaRect($height, $width) {
   $area = $height * $width;
-  $message = "A rectangle of length {$height} and {$width} has an area of {$area}.";
+  $message = "A rectangle of height {$height} and width {$width} has an area of {$area}.";
   return $message;
 }
 
-echo areaRect(3,4);
-
 ?>
 </pre>
+<form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8" 
+  style="padding: 5px; background-color: #efefef;">
+  <p>
+    <label>Height:<br>
+      <input type="number" name="height" required>
+    </label>
+  </p>
+  <p>
+    <label>Width:<br>
+      <input type="number" name="width" required>
+    </label>
+  </p>
+  <button type="submit">Calculate Area</button>
+  <p>
+  <b>Result: </b>
+    <?php 
+      if (!is_null($_POST["height"]) && !is_null($_POST["width"])) {
+        $h = $_POST["height"];
+        $w = (int) $_POST["width"];
+        echo areaRect($h, $w);
+      }
+    ?>
+  </p>
+</form> 
 </details>
 
 <!-- Exercice 3 -->
