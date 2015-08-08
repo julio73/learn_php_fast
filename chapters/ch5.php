@@ -140,11 +140,57 @@ function areaRect($height, $width) {
 <h2>Exercice 3</h2>
 <details>
   <summary>Solution</summary>
+  <i>Comment: There has to be an easier way to do this month thing.<br>
+  Terrible learning curve from content. What does it mean by "once again"?<br>
+  When was I supposed to have used php forms so far?</i>
   <pre>
 <?php 
 
-
+// Calendar months and their number of days
+$months = [
+  "january" => 31, 
+  "february" => "28 days, if leap year 29",
+  "march" => 31,
+  "april" => 30,
+  "may" => 31,
+  "june" => 30,
+  "july" => 31,
+  "august" => 31,
+  "september" => 30,
+  "october" => 31,
+  "november" => 30,
+  "december" => 31,
+];
+// Option maker for months select tag
+function optionMaker($key, $value) {
+  global $called;
+  return "<option value=\"{$value}\">".ucwords($key)."</option>";
+}
 
 ?>
 </pre>
+<form action="<?php $_PHP_SELF ?>" method="POST" accept-charset="utf-8"
+  style="padding: 5px; background-color: #efefef;">
+  <p>
+    <label for="month">Please choose a month.</label>
+    <select id="month" name="month">
+      <?php 
+        foreach ($months as $key => $value) {
+          print optionMaker($key, $key);
+        }
+        unset($key, $value);
+      ?>
+    </select>
+  </p>
+  <button type="submit">Submit</button>
+  <p>
+    <b>Result: </b>
+    <?php 
+      if (!is_null($_POST["month"])) {
+        $month = $_POST["month"];
+        echo "The month of ".ucfirst($month)." has ".$months[$month]." days.";
+      }
+    ?>
+  </p>
+</form>
 </details>
