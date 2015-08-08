@@ -1,5 +1,7 @@
-<title>Chapter 3</title>
-<a href=".." title="Home">Home</a>
+<?php 
+$title = "Chapter 3";
+include_once 'shared/banner.php';
+?>
 <h2>Chapter Three – Logical, Math and other Expressions and Operations</h2>
 <pre>
   Introduction to Expressions and Operators

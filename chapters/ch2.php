@@ -1,5 +1,7 @@
-<title>Chapter 2</title>
-<a href=".." title="Home">Home</a>
+<?php 
+$title = "Chapter 2";
+include_once 'shared/banner.php';
+?>
 <h2>Chapter Two – Variables</h2>
 <pre>
   Introduction to Variables

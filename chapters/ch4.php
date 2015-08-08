@@ -1,5 +1,7 @@
-<title>Chapter 4</title>
-<a href=".." title="Home">Home</a>
+<?php 
+$title = "Chapter 4";
+include_once 'shared/banner.php';
+?>
 <h2>Chapter Four – Control Structures</h2>
 <pre>
   Introduction
