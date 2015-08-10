@@ -126,8 +126,8 @@ if (($_SERVER["REQUEST_METHOD"] === "POST") &&
 
 ?>
 </pre>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" accept-charset="utf-8" 
-  style="padding: 5px; background-color: #efefef;">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"
+  accept-charset="utf-8" >
   <p>
     <label>Height:<br>
       <input type="number" name="height" min="0" required
@@ -189,7 +189,7 @@ if (($_SERVER["REQUEST_METHOD"] === "POST") && !is_null($_POST["month"])) {
 ?>
 </pre>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"
-  accept-charset="utf-8" style="padding: 5px; background-color: #efefef;">
+  accept-charset="utf-8">
   <p>
     <label for="month">Please choose a month.</label>
     <select id="month" name="month">
