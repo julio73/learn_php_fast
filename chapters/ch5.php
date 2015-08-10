@@ -92,10 +92,9 @@ function deliveryMessage($menu, $category_name, $meal_selection) {
   return $message;
 }
 
-print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee
-
  ?>
   </pre>
+<?php print deliveryMessage($ch2_menu, 'breakfast', 0); // coffee ?>
 </details>
 
 <!-- Exercice 2 -->
