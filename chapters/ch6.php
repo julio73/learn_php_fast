@@ -11,17 +11,17 @@
     Connectors
     Drivers
     Extensions
-    PHP
-    MySQL
-    APIs
+    PHP MySQL APIs
     mysqli Extension
     PDO Extension
-  PHPMyAdmin and getting familiar with MySQL Basics
+  PHPMyAdmin and getting familiar with MySQL
+    Basics
   MySQLi
     Dual interface
     Connections
     Executing statements
     Prepared statements
+  Conclusion
 </pre>
 
 <!-- Exercice 1 -->

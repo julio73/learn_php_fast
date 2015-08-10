@@ -17,6 +17,7 @@
     <li><a href="chapters/ch3.php" title="CH3 - Logical, Math and other Expressions and Operations">CH3 - Logical, Math and other Expressions and Operations</a></li>
     <li><a href="chapters/ch4.php" title="CH4 - Control Structures">CH4 - Control Structures</a></li>
     <li><a href="chapters/ch5.php" title="CH5 - Functions">CH5 - Functions</a></li>
+    <li><a href="chapters/ch6.php" title="CH6 - Databases">CH6 - Databases</a></li>
   </ul>
 </nav>
 </body>
