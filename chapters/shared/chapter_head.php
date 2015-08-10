@@ -7,6 +7,7 @@
   <title><?php echo $title ?></title>
   <style>
     body {width: 450px; margin: 30px auto; padding: 0 10px;}
+    h2 {text-indent: -1em; padding-left: 1em;}
     pre {max-width: 440px; overflow-x: scroll;}
     form {padding: 10px; background-color: #eee;}
     a, a:visited {text-decoration: none; color: #03f;}
