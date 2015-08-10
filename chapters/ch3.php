@@ -63,7 +63,7 @@ echo 'What goes '.$around.' comes '.$around.'.';
 
 <!-- Exercice 3 -->
 <h2 id="exo3">Exercice 3</h2>
-<details open>
+<details>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <i>Comment: Well, the <b>echo</b> commands still contains 
   something else like <b>.\n</b> or HTML line breaks.<br>
