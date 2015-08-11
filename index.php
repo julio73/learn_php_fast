@@ -18,7 +18,7 @@
     <li><a href="chapters/ch4.php" title="CH4 - Control Structures">CH4 - Control Structures</a></li>
     <li><a href="chapters/ch5.php" title="CH5 - Functions">CH5 - Functions</a></li>
     <li><a href="chapters/ch6.php" title="CH6 - Databases">CH6 - Databases</a></li>
-    <li>...</li>
+    <li>Post-pre-intro</li>
     <li><a href="chapters/ch10.php" title="CH10 - Object Oriented Programming">CH10 - Object Oriented Programming</a></li>
   </ul>
 </nav>
