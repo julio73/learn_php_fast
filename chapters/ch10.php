@@ -28,6 +28,37 @@
   <pre>
 <?php 
 
+/**
+* Class Select
+*/
+class Select
+{
+  protected $name; // Name of select field
+  protected $value; // Values selected
+  const BROWSER_TYPES = [ // Type of browsers
+    'Firefox', 'Chrome', 'Internet Explorer', 'Safari', 'Opera', 'Other'
+  ];
+  
+  function setName() {
+    # code...
+  }
+  function getName() {
+    # code...
+  }
+  function setValue() {
+    # code...
+  }
+  function getValue() {
+    # code...
+  }
+  
+  function makeOptions() {
+    
+  }
+  function makeSelect() {
+    
+  }
+}
 
 
  ?>
