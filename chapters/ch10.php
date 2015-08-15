@@ -17,7 +17,7 @@
     Constructors and destructors
     Object Inheritance
     Scope Resolution
-    Operator (::)
+    Operator (::) <i>(aka Paamayim Nekudotayim. Wow! TIL.)</i>
   Conclusion
 </pre>
 
