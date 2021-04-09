@@ -25,13 +25,29 @@
 </pre>
 
 <!-- Exercice 1 -->
-<h2 id="exo1">Exercice 1</h2>
-<details>
+<h2 id="exo1"c>Exercice 1</h2>
+<details open>
   <summary>Solution | <a href="#" title="Back to top">▲ Top</a></summary>
   <pre>
 <?php 
 
+$user = 'root';
+$password = 'root';
+$db = 'inventory';
+$host = 'localhost';
+$port = 8889;
 
+$link = mysqli_init();
+$success = mysqli_real_connect(
+  $link,
+  $host,
+  $user,
+  $password,
+  $db,
+  $port
+);
+
+var_dump($link);
 
  ?>
   </pre>
